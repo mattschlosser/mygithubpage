@@ -1,7 +1,7 @@
 body, html {
 	margin: 0px;
 	padding: 0px;
-	font-family: Arial, sans-serif; /* for now */
+	font-family: "Open Sans", Arial, sans-serif; /* for now */
 }
 header {
 	background-color: #0033ae;
