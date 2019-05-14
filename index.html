@@ -1,36 +1,113 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>The Website Making Guy</title>
-		<script src="scripts/main.js"></script>
-		<link rel="stylesheet" href="css/main.css"/>
-		<meta charset="UTF-8"/>
-	</head>
-	<body>
-		<div id='container'>
-			<header>
-				<h1>WSMG</h1>
-				<h3>Website Making Guy</h3>
-			</header>
-			<div id='links'>
-				<div id='linkwrapper'>
-					<a href='index.php'>HOME</a><a href='services'>SERVICES</a><a href='about.php'>ABOUT</a><a href='contact.php'>CONTACT</a>
-				</div>
-			</div>
-			<div id='content'>
-				<div class='wrapper'>
-				Looking for a website for your business? You've come to the right place. 
-				<h3>Custom Design</h3>
-				All my websites are custom designed to suit your needs. 
-				</div>
-			</div>
-			<footer>
-				<div class='wrapper'>
-					<strong>Website Making Guy</strong><br/>
-					250.794.7962 
-				</div>
-			</footer>
-			</div>
-	</body>
+  <head>
+    <title>Matt Schlosser</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700"/>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-boohttps://codepen.io/mattschlosser/pen/dEObbZ#settings-jststrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="./style.css"/>
+  </head>
 </html>
-		
+<body>
+  <header>
+    <div class='width-control'>
+    <div class='top-nav'>
+      <h1 > Matt Schlosser </h1>
+      <nav>
+        <a href="/">Home</a>
+        <!-- <a href="/contact">Contact</a> -->
+      </nav>
+    </div>
+    </div>
+  </header>
+  <main>
+    <div class='width-control'>
+      <content>
+        <h2>Introduction</h2>
+        <p>Hey there! My name is Matt. I'm passionate about web  and software development. I've just finished all my coursework required for my Bachelor of Science in Computing Science at the University of Alberta. I anticipate to graduate this June. Below are some samples of the work I've done. I have experience in a broad range of subjects. During my time in post-secondary, I took classes in robotics, 3D graphics, computer organization and architechure, non-procedural programming languages, parallel programming, compilers, machine learning, and artificial intelligence.
+          
+          In addition to my course work, I also have taught myself other technologies on the side. These include web design componnets such asHTML, CSS, Javascript, jQuery, Node.js, and React, to name a few. 
+          Below are just a few samples of the work I have done.  </p>
+
+        <h2>Featured Work</h2>
+          <div class='carousel'>
+            <div class='box'>
+              <img alt='screenshot' src='./img/traffic.png'/>
+              <p class='title'><a href='https://codepen.io/mattschlosser/full/mYEgeq' target="_new">Traffic Dashboard</a></p>
+              <p class='desc'>Here is a quick project I put together using <a href='https://data.edmonton.ca/'>Edmonton's Open Data API</a>. It shows all current and upcoming construction in the City of Edmonton. The different cards can be sorted by current or upcoming, and for each one, a map of the area can easily be viewed. </p>
+            </div>
+            <div class='box'>
+              <img alt='screenshot' src='./img/robots.jpg' />
+              <p class='title'><a href='https://sites.google.com/view/cs3120w17mattdarien/home' target="_new">Robotics Class</a></p>
+              <p class='desc'>Here is the final report from my CS 3120 robotics class at Grande Prairie Regional College. The robot had to perform a number of different tasks, incuding line following, maze navigation, and targetting. </p>
+            </div>
+            <div class='box'>
+              <img alt='screenshot' src='./img/roomm8s.png' />
+              <p class='title'><a href='https://roomm8s.net'>Roommates App</a></p>
+              <p class='desc'>In January 2019, I participated in a hackathon. I made a simple app with Bootstrap/Node.js/express that helps organize and share information between roommates like chores, groceries, and rent. It isn't completely finished, but you can click the link to see what I have so far. </p>
+            </div>
+            
+          </div>
+  <!--       Code pen projects here.  -->
+          <div class='portfolio'>
+            
+        
+        <h2>Acheivements</h2>
+        More information will be added shortly. 
+      </content>
+    </div>
+  </main>
+  <footer>
+    <div class='width-control bot-nav'>
+      <div>
+        <table>
+          <tr>
+            <td colspan='2'><strong>Usernames:</strong></td>
+          </tr>
+          <tr>
+            <td><i class="github icon"></i></td>
+            <td><a href='https://github.com/mattschlosser' target="_new">mattschlosser</a></td>
+          </tr>
+          <tr>
+            <td><i class="linkedin icon"></li></td>
+            <td><a href="https://linkedin.com/in/mattjschlosser" target="_new">mattjschlosser</a></td>
+          </tr>
+          <tr>
+            <td><i class="codepen icon"></i></td>
+            <td><a href='https://codepen.io/mattschlosser ' target="_new">mattschlosser</a></td>
+          </tr>
+        </table>
+      </div>
+      <div class='address'>
+        <table>
+          <tr><td><strong>Contact: </strong></td></tr>
+          <tr><td>Matt Schlosser</td></tr>
+          <tr><td><a id="phone">(123) 456-7890</a></td></tr>
+          <tr><td ><a id="email" href="/">generic@email.address</a></td></tr>
+        </table>
+      </div>
+    </div>
+    <script>
+      const phone = document.getElementById("phone");
+      const ac = "587";
+      const pf = "568";
+      const n = "3853"
+      const p =  `${ac} ${pf}-${n}`;
+      phone.textContent =p;
+      phone.setAttribute("href", `tel:1-${ac}-${pf}-${n}`);
+    
+      const e = document.getElementById("email");
+      u = "matt.schlosser";
+      d = "ualberta";
+      x = "ca";
+      const em = `${u}@${d}.${x}`;
+      e.textContent = em;
+      e.setAttribute("href", `mailto:${em}`);
+    </script>
+  </footer>
+</body>
